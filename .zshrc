@@ -1,16 +1,23 @@
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt extendedglob nomatch notify
 unsetopt autocd beep
 bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
+
 zstyle :compinstall filename '/home/ezra-dvlpr/.zshrc'
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
-#
+
 PROMPT='%/ % :: '
+
+if [[ $(uname) == "Darwin" ]]; then
+	#if macos, then make sure to add pip to path
+	if [ -f "$HOME/.env" ]; then
+    	source "$HOME/.env"
+  	fi
+	export PATH="$PYTHON_PATH:$PATH"
+else 
+	echo "Not MacOS!"
+fi
