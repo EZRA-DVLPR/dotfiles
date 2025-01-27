@@ -4,30 +4,30 @@ Welcome to my setup!
 
 I utilize 2 machines for what I do:
 1. My laptop which is a Macbook Pro that I use for development remotely.
-2. My primary machine however, is a dual-boot Windows/Linux machine.
+2. My primary machine however, is a dual-boot Windows/Linux machine that I use for gaming and development.
 
-I use arch btw. lmao
+I use arch btw. lol
 
-This repo is a collection of the dotfiles that are used to configure my machines so they are more in sync with one another for work.
+This repo is a collection of the dotfiles that are used to configure my machines so my digital workstations are more in sync with one another for work-related stuff.
 
 ## Quick Description of my setup for my Arch Linux machine
 
 > [!Note]
-> My Arch setup uses 3 types of ways to use the PC:
-> 1. With Awesome WM where I configured it from the bottom up
-> 2. With KDE Plasma 6 (Wayland)
-> 3. With KDE Plasma 6 (X11)
+> My Arch part of the PC has 3 different ways of logging in as a user:
+> 1. Awesome WM (where I configured it from the bottom up)
+> 2. KDE Plasma 6 (Wayland)
+> 3. KDE Plasma 6 (X11)
 
 - OS: Arch
 - Window Manager: Awesome, KWin
 - Widgets: Rofi(?)
 - Notifications: Rofi(?)
 - Shell: Zshell
-- Terminal: + tmux
+- Terminal: WezTerm + tmux
 - Editor: Neovim
 - File Manager: Dolphin
 - Status Bar: Polybar (?)
-- Keyboard layout: QWERTY, (Soon to be DVORAK)
+- Keyboard layout: QWERTY, (currently learning DVORAK)
 - Browser: Floorp, Brave
 
 ## Demo
@@ -43,7 +43,7 @@ Insert screenshots and video of setup in use. might wanna show on the diff OS
 
 1. [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) must be installed 
 2. [zshell](https://wiki.zshell.dev/) is my shell of choice
-3. [Alacritty](https://alacritty.org/) is a fun and cool [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator)
+3. [Wezterm](https://wezfurlong.org/wezterm/index.html) is a fun and cool [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator)
 4. [neovim](https://neovim.io/) is the code/text editor of choice
 5. [gnu stow](https://www.gnu.org/software/stow/) is the way that I'm using this repo. 
     1. basically it handles all the [symlinks](https://en.wikipedia.org/wiki/Symbolic_link)
@@ -73,13 +73,13 @@ You can read the documentation for downloading it [here](https://github.com/yann
 
 ### Configuration
 
-I use [lazy][https://github.com/folke/lazy.nvim] for managing packages in neovim.
+I use [lazy](https://github.com/folke/lazy.nvim) for managing packages in neovim.
 It is super simple to use which was great for me as I transitioned into using Neovim.
-For individual plugins, see the [list of plugins][https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins].
+For individual plugins, see the [list of plugins](https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins).
 Within each file there are 1+ plugins.
 
 > [!Tip]
-> The majority of the files within the [plugins folder][https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins] are singleton packages. 
+> The majority of the files within the [plugins folder](https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins) are singleton packages. 
 > However, not all are!
 > eg. The `lsp-conf.lua` file contains many packages that are all related to the configuration of LSPs.
 > Be aware that some packages are exluding dependencies because these dependencies are already considered in other packages as well.
@@ -87,19 +87,19 @@ Within each file there are 1+ plugins.
 
 ## Font:
 
-I use [Maple Mono][https://github.com/subframe7536/maple-font] as my font for everything.
-I absolutely love the style it has.
-It's extremely customizable, and has this great way of flowing between letters.
-It's also easy to read.
-It also has this cool cursive writing effect when certain conditions are met (eg. comments, function definitions, etc.).
-It also mimics how I write in real life, which is a mixture of cursive and print.
+I use [Maple Mono](https://github.com/subframe7536/maple-font) as my font for everything.
+If you want to download the config and use as is, make sure to download the font and then apply it to your system wherever I put it.
 
-If you want it to work seamlessly, make sure to download the font and then apply it to your system wherever I put it.
+# Showcase
+
+***
+Insert screenshots and video of setup in use. might wanna show on the diff OS
+***
 
 # Contributing
 
-I use this for myself and slightly modify it based on my needs.
-If you happen to find any bugs/inconsistencies/room for misinterpretation, please feel free to report an issue or offer a PR.
+I use this for myself and modify it based on my needs.
+If you happen to find any bugs/inconsistencies/errors, please feel free to report an issue or make a PR.
 
 # Tip Jar
 
@@ -107,10 +107,5 @@ Donations for those who want to give.
 I share my stuff for the love of it, free of cost.
 If you choose to support me, then I offer you my humblest gratitude and wish you a lovely day!
 
-Donation links here!
+`Donation links here!`
 
-# Showcase
-
-***
-Insert screenshots and video of setup in use. might wanna show on the diff OS
-***
