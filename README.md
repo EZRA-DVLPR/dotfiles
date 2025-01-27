@@ -58,18 +58,18 @@ Insert screenshots and video of setup in use. might wanna show on the diff OS
 
 For neovim, you will need the following dependencies to get the plugins running.
 
-- npm for things regarding javascript and typescript (generally speaking) [learn more about npm here][https://www.npmjs.com/]
-- pip (and python) for certain packages [see how to install python and pip here][https://pip.pypa.io/en/stable/installation/]
+- npm for things regarding javascript and typescript (generally speaking) [learn more about npm here](https://www.npmjs.com/)
+- pip (and python) for certain packages [see how to install python and pip here](https://pip.pypa.io/en/stable/installation/)
     - Usually pip comes installed with the newer versions of python (2.7.9+ and 3.4.0+)
-    - However, there are ways to install [pip independently][https://pip.pypa.io/en/stable/installation/]
-- rust (cargo specifically) [learn more about cargo here][https://doc.rust-lang.org/cargo/]
-- go [learn more about go here][https://go.dev/doc/install]
+    - However, there are ways to install [pip independently](https://pip.pypa.io/en/stable/installation/)
+- rust (cargo specifically) [learn more about cargo here](https://doc.rust-lang.org/cargo/)
+- go [learn more about go here](https://go.dev/doc/install)
 
 > [!Note]
 > For a default standard configuration you will also need a program called krabby for the dashboard!
 
 Krabby is a program that prints a pixelart pokemon to the terminal which I use on the dashboard for neovim.
-You can read the documentation for downloading it [here][https://github.com/yannjor/krabby]
+You can read the documentation for downloading it [here](https://github.com/yannjor/krabby)
 
 ### Configuration
 
