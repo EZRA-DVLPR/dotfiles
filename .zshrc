@@ -17,7 +17,10 @@ if [[ $(uname) == "Darwin" ]]; then
 	if [ -f "$HOME/.env" ]; then
     	source "$HOME/.env"
   	fi
-	export PATH="$PYTHON_PATH:$PATH"
+	PATH="$PYTHON_PATH:$PATH"
+	#add WezTerm to path too
+	PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
+	export PATH
 else 
 	echo "Not MacOS!"
 fi
