@@ -23,7 +23,7 @@ This repo is a collection of the dotfiles that are used to configure my machines
 - Widgets: Rofi(?)
 - Notifications: Rofi(?)
 - Shell: Zshell
-- Terminal: Alacritty + tmux
+- Terminal: + tmux
 - Editor: Neovim
 - File Manager: Dolphin
 - Status Bar: Polybar (?)
@@ -41,18 +41,18 @@ Insert screenshots and video of setup in use. might wanna show on the diff OS
 >[!Note]
 >I use GNU Stow for managing these files.
 
-1. [git][https://git-scm.com/book/en/v2/Getting-Started-Installing-Git] must be installed 
-2. [zshell][https://wiki.zshell.dev/] is my shell of choice
-3. [Alacritty][https://alacritty.org/] is a fun and cool [terminal emulator][https://en.wikipedia.org/wiki/Terminal_emulator]
-3. [neovim][https://neovim.io/] is the code/text editor of choice
-4. [gnu stow][https://www.gnu.org/software/stow/] is the way that I'm using this repo. 
-    1. basically it handles all the [symlinks][https://en.wikipedia.org/wiki/Symbolic_link]
+1. [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) must be installed 
+2. [zshell](https://wiki.zshell.dev/) is my shell of choice
+3. [Alacritty](https://alacritty.org/) is a fun and cool [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator)
+4. [neovim](https://neovim.io/) is the code/text editor of choice
+5. [gnu stow](https://www.gnu.org/software/stow/) is the way that I'm using this repo. 
+    1. basically it handles all the [symlinks](https://en.wikipedia.org/wiki/Symbolic_link)
     2. by making a copy of the path from `$HOME`
     3. and allows me to edit either copy and have them reflected both in the git repo, and live.
-    eg. `.zshrc` gets copied from the repo into the path `~/.zshrc`. Any change reflected in either gets shown in the other.
-5. Depending on your OS you may have to perform additional steps:
-    eg. for MacOS make sure you have installed XCode and agreed to the license agreement
-6. Besides the OS specific steps there are additional steps for setup depending on what parts of the repo you're interested in.
+    - eg. `.zshrc` gets copied from the repo into the path `~/.zshrc`. Any change reflected in either gets shown in the other.
+6. Depending on your OS you may have to perform additional steps:
+    - eg. for MacOS make sure you have installed XCode and agreed to the license agreement
+7. Besides the OS specific steps there are additional steps for setup depending on what parts of the repo you're interested in.
 
 ## Neovim:
 
