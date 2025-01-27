@@ -58,15 +58,15 @@ Insert screenshots and video of setup in use. might wanna show on the diff OS
 
 For neovim, you will need the following dependencies to get the plugins running.
 
-- npm for things regarding javascript and typescript (generally speaking) [learn more about npm here](https://www.npmjs.com/)
-- pip (and python) for certain packages [see how to install python and pip here](https://pip.pypa.io/en/stable/installation/)
+- [npm](https://www.npmjs.com/) for things regarding javascript and typescript (generally speaking)
+- [pip](https://pip.pypa.io/en/stable/installation/) and [python](https://www.python.org/downloads/)
     - Usually pip comes installed with the newer versions of python (2.7.9+ and 3.4.0+)
     - However, there are ways to install [pip independently](https://pip.pypa.io/en/stable/installation/)
-- rust (cargo specifically) [learn more about cargo here](https://doc.rust-lang.org/cargo/)
-- go [learn more about go here](https://go.dev/doc/install)
+- rust, but more specifically [cargo](https://doc.rust-lang.org/cargo/)
+- [go](https://go.dev/doc/install)
 
 > [!Note]
-> For a default standard configuration you will also need a program called krabby for the dashboard!
+> For a default standard configuration you will also need krabby for the dashboard!
 
 Krabby is a program that prints a pixelart pokemon to the terminal which I use on the dashboard for neovim.
 You can read the documentation for downloading it [here](https://github.com/yannjor/krabby)
@@ -75,20 +75,19 @@ You can read the documentation for downloading it [here](https://github.com/yann
 
 I use [lazy](https://github.com/folke/lazy.nvim) for managing packages in neovim.
 It is super simple to use which was great for me as I transitioned into using Neovim.
-For individual plugins, see the [list of plugins](https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins).
-Within each file there are 1+ plugins.
+For individual plugins, see the [list of plugins](https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins) within the repo.
 
 > [!Tip]
 > The majority of the files within the [plugins folder](https://github.com/EZRA-DVLPR/dotfiles/tree/main/.config/nvim/lua/plugins) are singleton packages. 
 > However, not all are!
 > eg. The `lsp-conf.lua` file contains many packages that are all related to the configuration of LSPs.
-> Be aware that some packages are exluding dependencies because these dependencies are already considered in other packages as well.
+> Be aware that some packages exclude dependencies because these dependencies are already considered in other packages as well.
 > Make sure to look at the documentation of the individual package to ensure a proper install.
 
 ## Font:
 
 I use [Maple Mono](https://github.com/subframe7536/maple-font) as my font for everything.
-If you want to download the config and use as is, make sure to download the font and then apply it to your system wherever I put it.
+If you want to download the config and use as is, make sure to download the font and then apply it to your terminal.
 
 # Showcase
 
