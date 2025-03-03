@@ -4,6 +4,6 @@ return {
 		RRGGBBAA = true,
 	},
 	config = function()
-		require("colorizer").setup({})
-	end
+		require("colorizer").setup({ "*" })
+	end,
 }
