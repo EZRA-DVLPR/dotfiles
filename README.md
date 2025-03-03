@@ -83,6 +83,10 @@ For individual plugins, see the [list of plugins](https://github.com/EZRA-DVLPR/
 > eg. The `lsp-conf.lua` file contains many packages that are all related to the configuration of LSPs.
 > Be aware that some packages exclude dependencies because these dependencies are already considered in other packages as well.
 > Make sure to look at the documentation of the individual package to ensure a proper install.
+>
+> For a complete install of individual packages, take a look at [the lazy-lock file](https://github.com/EZRA-DVLPR/dotfiles/blob/main/.config/nvim/lazy-lock.json).
+
+
 
 ## Font:
 
