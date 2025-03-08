@@ -36,7 +36,7 @@ return {
 			--setup all the lsps
 			lspconfig.biome.setup({
 				cmd = { "biome", "lsp-proxy" },
-				filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+				filetypes = { "javascript", "javascriptreact" },
 				root_dir = require("lspconfig.util").root_pattern("package.json", "biome.json", ".git"),
 				on_attach = function(client, bufnr) end,
 			})

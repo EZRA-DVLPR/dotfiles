@@ -20,6 +20,8 @@ if [[ $(uname) == "Darwin" ]]; then
 	PATH="$PYTHON_PATH:$PATH"
 	#add WezTerm to path too
 	PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
+	#add fyne to path
+	PATH=$PATH:$(go env GOPATH)/bin
 	export PATH
 else 
 	echo "Not MacOS!"
