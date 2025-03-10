@@ -19,6 +19,9 @@ vim.opt.termguicolors = true
 vim.opt.splitright = true
 vim.opt.clipboard:append("unnamedplus")
 
+-- make nvim read all files as latex with ext: .tex
+vim.g.tex_flavor = "latex"
+
 -- TODO: Understand what this line does >+1<CR>gv=gv
 -- TODO:
 
