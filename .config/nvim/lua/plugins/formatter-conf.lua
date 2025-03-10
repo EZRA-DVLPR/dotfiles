@@ -16,6 +16,7 @@ return {
 					"rustfmt",
 					"clang-format",
 					"gofumpt",
+					"tex-fmt",
 				},
 			})
 		end,
@@ -36,6 +37,14 @@ return {
 					cpp = { "clang-format" },
 					csh = { "clang-format" },
 					go = { "gofumpt" },
+					tex = { "tex-fmt" },
+				},
+				formatters = {
+					["tex-fmt"] = {
+						command = "tex-fmt",
+						args = { "--usetabs", "--tabsize", "1", "$FILENAME" },
+						stdin = false,
+					},
 				},
 				format_on_save = {
 					timeout_ms = 500,

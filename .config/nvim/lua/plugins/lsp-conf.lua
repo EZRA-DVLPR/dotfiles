@@ -21,6 +21,7 @@ return {
 					"pyright",
 					"rust_analyzer",
 					"taplo",
+					"ltex",
 				},
 			})
 			vim.diagnostic.config({ update_in_insert = true }) --keep the LSP messages while in insert mode
@@ -47,6 +48,7 @@ return {
 			lspconfig.pyright.setup({})
 			lspconfig.rust_analyzer.setup({})
 			lspconfig.taplo.setup({})
+			lspconfig.ltex.setup({})
 		end,
 	},
 	--mini display for some LSPs to log process during startup/working process
