@@ -1,15 +1,28 @@
 return {
 	--the core for downloading stuff
 	{
-		"williamboman/mason.nvim",
-		opts = {},
+		"mason-org/mason.nvim",
+		opts = {
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		},
 		config = function()
 			require("mason").setup()
 		end,
 	},
 	--handles downloading all LSPs
 	{
-		"williamboman/mason-lspconfig.nvim",
+		"mason-org/mason-lspconfig.nvim",
+		opts = {},
+		dependencies = {
+			{ "mason-org/mason.nvim", opts = {} },
+			"neovim/nvim-lspconfig",
+		},
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
