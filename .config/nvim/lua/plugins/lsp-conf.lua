@@ -45,23 +45,31 @@ return {
 		"neovim/nvim-lspconfig",
 		opts = {},
 		config = function()
-			local lspconfig = require("lspconfig")
-
-			--setup all the lsps
-			lspconfig.biome.setup({
-				cmd = { "biome", "lsp-proxy" },
-				filetypes = { "javascript", "javascriptreact" },
-				root_dir = require("lspconfig.util").root_pattern("package.json", "biome.json", ".git"),
-				on_attach = function(client, bufnr) end,
+			vim.lsp.config("biome", {
+				settings = {
+					["biome"] = {
+						cmd = { "biome", "lsp-proxy" },
+						filetypes = { "javascript", "javascriptreact" },
+						root_dir = require("lspconfig.util").root_pattern("package.json", "biome.json", ".git"),
+						on_attach = function(client, bufnr) end,
+					},
+				},
 			})
-			lspconfig.clangd.setup({})
-			lspconfig.gopls.setup({})
-			lspconfig.jdtls.setup({})
-			lspconfig.lua_ls.setup({})
-			lspconfig.pyright.setup({})
-			lspconfig.rust_analyzer.setup({})
-			lspconfig.taplo.setup({})
-			lspconfig.ltex.setup({})
+			vim.lsp.enable("clangd")
+			vim.lsp.config.gopls = {
+				name = "gopls",
+				cmd = { "gopls" },
+				filetypes = { "go", "gomod", "gowork", "gotmpl" },
+				root_dir = vim.fs.dirname(vim.fs.find({ "go.work", "go.mod" }, { upward = true })[1]),
+				settings = {},
+			}
+			vim.lsp.enable("jdtls")
+			vim.lsp.enable("lua_ls")
+			vim.lsp.enable("pyright")
+			vim.lsp.enable("rust_analyzer")
+			vim.lsp.enable("stylua")
+			vim.lsp.enable("taplo")
+			vim.lsp.enable("ltex")
 		end,
 	},
 	--mini display for some LSPs to log process during startup/working process
